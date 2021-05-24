@@ -1,0 +1,70 @@
+@import "./styles/root";
+
+.Footer {
+  background: #FF005C;
+  padding: 20px 0;
+
+  .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 119px;
+
+    @media #{$mobile} {
+      flex-direction: column;
+      margin: 0 26px;
+      align-items: flex-start;
+    }
+  }
+
+  .Contacts {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-family: 'Proxima Nova Regular', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      margin: 0;
+
+      &:first-child {
+        margin-bottom: 12px;
+      }
+
+      @media #{$mobile} {
+        text-align: left;
+        color: #000;
+      }
+    }
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: row;
+
+    @media #{$tablet} {
+      display: none;
+    }
+
+    @media #{$mobile} {
+     display: none;
+    }
+
+    a {
+      font-family: 'Proxima Nova Regular', sans-serif;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      margin-left: 30px;
+    }
+  }
+}

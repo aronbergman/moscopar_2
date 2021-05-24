@@ -1,0 +1,199 @@
+@import "./styles/root";
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 450px;
+  overflow: hidden;
+
+  .Container {
+    width: auto;
+    margin: 0 119px;
+
+    @media #{$mobile} {
+      margin: 0;
+    }
+  }
+
+  .Rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .Image {
+    width: $base-spacing*37;
+    height: $base-spacing*25;
+    top: 0;
+    right: 0;
+    background-image: url("../../public/about-image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
+  .Title {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $base-spacing*3;
+    line-height: 96.11%;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+    color: #000000;
+    margin-top: 69px;
+    margin-left: 100px;
+
+    @media #{$tablet} {
+      margin: 0;
+      width: max-content;
+    }
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
+  .Description {
+    position: relative;
+    width: 418px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding: 20px 38px;
+    margin: 50px 0 0 220px;
+
+    @media #{$tablet} {
+      margin: 80px 0 0;
+    }
+
+    @media #{$mobile} {
+      display: none;
+    }
+
+    &:before {
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      content: "";
+      border-left: 2px solid #000000;
+    }
+  }
+
+  .DescriptionMobile {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 176px;
+    padding: 0 11px 0 35%;
+    margin: 32px 0 0;
+    background-image: url("../../public/about-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    align-items: center;
+
+    @media #{$mobile} {
+      display: flex;
+    }
+  }
+
+  .Counts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 140px 119px 6em;
+    width: auto;
+
+    @media #{$tablet} {
+      background-image: url("../../public/about-titles.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: calc(100% - 40px);
+      box-sizing: border-box;
+      height: 300px;
+      margin: 100px 0 0 40px;
+    }
+
+    @media #{$mobile} {
+      background-image: url("../../public/about-titles.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 200px;
+      width: calc(100% - 40px);
+      margin: 20px 0 0 40px;
+      box-sizing: border-box;
+    }
+  }
+
+  .CountItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+    min-width: 180px;
+
+    @media #{$tablet} {
+      display: none;
+    }
+
+    span {
+      font-family: 'Proxima Nova Regular', sans-serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: $base-spacing*5.5;
+      line-height: 96.11%;
+      letter-spacing: -0.02em;
+      text-transform: lowercase;
+      color: #000000;
+      margin-top: 20px;
+
+      @media #{$mobile} {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-family: 'Proxima Nova Regular', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $base-spacing*1.2;
+      line-height: 96.11%;
+      letter-spacing: -0.02em;
+      text-transform: lowercase;
+      color: #000000;
+
+      @media #{$mobile} {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .CountLine {
+    height: $base-spacing*8.3;
+    width: 2px;
+    background: #000000;
+
+    @media #{$tablet} {
+      display: none;
+    }
+  }
+}

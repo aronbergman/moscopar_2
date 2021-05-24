@@ -1,0 +1,91 @@
+@import "styles/root";
+
+.Main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: auto;
+  margin: 0 119px $base-spacing*6;
+
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
+
+  @media #{$mobile} {
+    margin: 0;
+  }
+}
+
+.Titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+}
+
+.Description {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $base-spacing;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  span {
+    color: #FF005C
+  }
+}
+
+.Title {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $base-spacing*3;
+  line-height: 70px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+  margin: 40px 40px 40px 0;
+
+
+  @media #{$tabletMax} {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @media #{$tablet} {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media #{$mobile} {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0 24px;
+    margin: 0;
+  }
+}
+
+.Image {
+  width: 40vw;
+  height: 40vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../../public/main-image.png");
+  margin: -15px auto 0;
+
+  @media #{$mobile} {
+    display: none;
+  }
+}

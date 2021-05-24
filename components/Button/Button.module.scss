@@ -1,0 +1,51 @@
+@import "styles/root";
+
+.Button {
+  position: relative;
+  height: $base-spacing*4;
+  background: #000;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $base-spacing;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  padding: 10px 110px 10px 50px;
+
+  &:after {
+    z-index: 10;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    background-image: url("../../public/button-arrow.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media #{$mobile} {
+      width: 25px;
+      height: 25px;
+      right: 20px;
+    }
+  }
+
+  @media #{$tablet} {
+    margin: 0 auto;
+  }
+
+  @media #{$mobile} {
+    padding: 5px 55px 5px 25px;
+    width: 165.74px;
+    height: 55px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,225 @@
+@import "./styles/root";
+
+.Information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 119px 6em;
+
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
+
+  @media #{$mobile} {
+    margin: 0;
+  }
+
+  .Title {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $base-spacing*3;
+    line-height: 96.11%;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+    color: #000;
+    margin: 0 0 100px;
+
+    @media #{$mobile} {
+      font-size: 24px;
+      margin: 30px 28px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+
+.InformationRow {
+  display: flex;
+  flex-direction: column;
+
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #000000;
+    width: 100%;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: 2px solid #000000;
+    }
+  }
+
+  .Titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-left: 0;
+
+    @media #{$mobile} {
+      margin: 0 28px;
+    }
+  }
+
+  .Button {
+    margin: 0 30px;
+
+    @media #{$mobile} {
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .ButtonIcon {
+    margin: 10px auto;
+    width: 40px;
+    max-width: 40px;
+    height: 60px;
+    background-image: url("../../public/minus.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media #{$mobile} {
+      margin: 10px auto 0;
+      width: 20px;
+      height: 30px;
+    }
+  }
+
+  .ButtonIconOpen {
+    background-image: url("../../public/plus.png");
+  }
+
+  .Title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 96.11%;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
+    color: #000000;
+    margin: 0;
+
+    @media #{$mobile} {
+      font-family: 'Proxima Nova Regular', sans-serif;
+      font-size: 30px;
+      margin: 30px 0;
+    }
+  }
+
+  .Items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    @media #{$mobile} {
+      margin-top: 0;
+    }
+  }
+
+  .Item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 46px;
+
+    &:last-child .Image {
+      margin-bottom: -7px;
+    }
+
+    .Image {
+      min-height: 281px;
+      min-width: 258px;
+      margin-left: 3px;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media #{$tablet} {
+        min-width: 150px;
+        min-height: 137px;
+        margin-right: 50px;
+      }
+
+      @media #{$mobile} {
+        min-width: 91px;
+        min-height: 137px;
+        margin-right: 20px;
+      }
+    }
+
+    .Text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .Title {
+        font-family: 'Proxima Nova Regular', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 51px;
+
+        @media #{$mobile} {
+          font-size: 24px;
+          padding: 0 20px;
+          width: auto;
+          margin-bottom: 15px;
+        }
+      }
+
+      .Description {
+        font-family: 'Proxima Nova Regular', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        color: #000000;
+        width: 90%;
+
+        @media #{$mobile} {
+          font-size: 13px;
+          width: auto;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  .Registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 74px;
+    left: 453px;
+    top: 293px;
+    background: $base-accent-color;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    margin: 60px 0 0;
+    padding: 0 40px;
+    cursor: pointer;
+
+    @media #{$mobile} {
+      width: 165.74px;
+      height: 55px;
+      margin: 0 auto;
+    }
+  }
+}

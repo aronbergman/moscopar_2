@@ -1,0 +1,62 @@
+@import './styles/root';
+
+.Banner {
+  display: flex;
+  width: 100vw;
+  height: 35vw;
+  background-image: url("../../public/banner.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-content: center;
+  align-items: center;
+  margin: 0 0 6em;
+  cursor: pointer;
+
+  @media #{$mobile} {
+    width: 100%;
+    background-image: url("../../public/banner-mobile.png");
+    margin: 0;
+  }
+
+  .Title {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 96.11%;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+    color: #fff;
+    margin: 0 250px;
+
+    @media #{$tablet} {
+      font-size: 50px;
+      margin: 0 100px;
+    }
+
+    @media #{$mobile} {
+      display: none;
+    }
+
+    span {
+      margin: 0 35px;
+      position: relative;
+      top: -18px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+      height: 100%;
+
+      @media #{$mobile} {
+        font-size: 10px;
+      }
+
+      svg {
+        margin: 0 20px -3px;
+      }
+    }
+  }
+}

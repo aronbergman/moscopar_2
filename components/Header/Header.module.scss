@@ -1,0 +1,94 @@
+@import "styles/root";
+
+.Header {
+  width: auto;
+  display: flex;
+  margin: 0 119px;
+  justify-content: space-between;
+  padding-top: 46px;
+
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing;
+  }
+
+  @media #{$mobile} {
+    margin: 0;
+    padding: 45px 21px 21px;
+  }
+}
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+
+  @media #{$tabletMax} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+.MenuItems {
+  margin: 0 $base-spacing;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $base-spacing;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-decoration: none;
+  height: $base-spacing*1.1;
+
+  @media #{$mobile} {
+    margin: 0;
+  }
+}
+
+.Logo {
+  width: $base-spacing*12;
+  height: $base-spacing*6;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../public/logo.png");
+
+  @media #{$mobile} {
+    width: 175px;
+    height: 82.8px;
+  }
+}
+
+.Text {
+  display: none;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  height: 21px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  background: #FF005C;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  padding: 0 20px;
+
+  @media #{$mobile} {
+    display: flex;
+    z-index: 10;
+  }
+
+  span {
+    color: #fff;
+    margin-left: 5px;
+  }
+}

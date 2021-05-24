@@ -50,7 +50,7 @@ const Information = () => {
                             </div>
                         ))}
                     </div>
-                    <Button label={"регистрация"} color={'#FF005C'}/>
+                    <Button label={"регистрация"} color={'#FF005C'} link={'https://events.webinar.ru/38722755/moscopar/'}/>
                 </div>}
             </div>
 

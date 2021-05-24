@@ -13,6 +13,7 @@ const Main = () => {
                 <Button
                     label="Регистрация"
                     color="#000"
+                    link={'https://events.webinar.ru/38722755/moscopar/'}
                 />
             </div>
 

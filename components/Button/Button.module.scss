@@ -17,7 +17,14 @@
   cursor: pointer;
   padding: 10px 110px 10px 50px;
 
+  &:hover {
+    &:after {
+      right: 30px;
+    }
+  }
+
   &:after {
+    transition: all .3s ease;
     z-index: 10;
     content: "";
     position: absolute;

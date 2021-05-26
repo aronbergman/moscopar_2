@@ -21,18 +21,19 @@ const Question = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.post('https://api.spid.center/v3/feedback', {
+        axios.post('api/feedback', {
             name: state.name,
             email: state.email,
             phone: state.phone,
             message: state.question,
             code: 2
         }, {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-                'Access-Control-Allow-Origin': '*',
-            }
+            crossDomain: true,
+            // headers: {
+            //     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            //     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+            //     'Access-Control-Allow-Origin': '*',
+            // }
         }).then(r => {
             setState({
                 question: '',

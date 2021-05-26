@@ -54,6 +54,12 @@
   cursor: pointer;
   line-height: 2.2;
   display: none;
+  opacity: .7;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media #{$mobile} {
     width: 30px;

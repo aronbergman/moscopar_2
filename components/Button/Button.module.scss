@@ -50,8 +50,8 @@
   }
 
   @media #{$mobile} {
-    padding: 5px 55px 5px 25px;
-    width: 165.74px;
+    padding: 5px 70px 5px 25px;
+    min-width: 165.74px;
     height: 55px;
     font-size: 14px;
   }

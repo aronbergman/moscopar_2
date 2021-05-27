@@ -57,7 +57,7 @@ export const timetables = [
                 time: '15:20 – 16:00',
                 title: 'панельная дискуссия',
                 talks: [
-                    { title: 'Спикеры и модераторы сессии 1' }
+                    { title: '' }
                 ]
             },
             {
@@ -110,7 +110,7 @@ export const timetables = [
                 time: '18:15 – 19:00',
                 title: 'панельная дискуссия',
                 talks: [
-                    { title: 'Спикеры и модераторы сессии 2' }
+                    { title: '' }
                 ]
             }
         ]
@@ -151,7 +151,7 @@ export const timetables = [
             {
                 time: '14:30 – 15:00',
                 title: 'панельная дискуссия',
-                talks: [{ title: 'Спикеры и модераторы сессии 3' }]
+                talks: [{ title: '' }]
             },
             {
                 time: '15:00 – 15:15',
@@ -180,7 +180,7 @@ export const timetables = [
             {
                 title: 'панельная дискуссия',
                 time: '15:15 – 16:00',
-                talks: [{ title: 'Спикеры и модераторы сессии 3' }]
+                talks: [{ title: '' }]
             },
             {
                 time: '16:00 – 16.30',

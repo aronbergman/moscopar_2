@@ -64,8 +64,8 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>MOSCO PAR 2021</title>
-                <meta name="description" content="русско-французская научно-практическая конференция"/>
+                <title>MOSCOPAR 2021</title>
+                <meta name="description" content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <link rel="icon" href="/favicon.ico"/>
                 <link rel="stylesheet" type="text/css" charSet="UTF-8"
                       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>

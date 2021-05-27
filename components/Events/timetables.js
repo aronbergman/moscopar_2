@@ -183,7 +183,7 @@ export const timetables = [
                 talks: [{ title: '' }]
             },
             {
-                time: '16:00 – 16.30',
+                time: '16:00 – 16:30',
                 title: 'закрытие конференции',
                 talks: [
                     {

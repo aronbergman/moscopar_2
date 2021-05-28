@@ -38,7 +38,7 @@ const Speakers = () => {
             <h2 className={styles.Title}>спикеры</h2>
 
             <Slider {...settings}>
-                <div>
+                <div className={styles.RadiusAndColors}>
                     <div className={styles.Squires}>
                         <div className={styles.Mobile}>
                             <Square photo={katlama} color={'#FF005C'}/>
@@ -84,7 +84,7 @@ const Speakers = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={styles.RadiusAndColorsSecond}>
                     <div className={styles.Squires}>
                         <div className={styles.Mobile}>
                             <Square photo={pronin} color={'#FF005C'}/>

@@ -31,7 +31,7 @@
     }
   }
 
-  div > .Speakers{
+  div > .Speakers {
     &:nth-child(1) {
       margin-top: $base-spacing*3;
 
@@ -121,7 +121,7 @@
     font-family: 'Proxima Nova Regular', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: calc( (100vw - 380px)/(1280 - 480) * (24 - 16) + 16px);
+    font-size: calc((100vw - 380px) / (1280 - 480) * (24 - 16) + 16px);
     line-height: 35px;
     text-align: right;
     text-transform: capitalize;
@@ -146,7 +146,7 @@
       padding: 0 10px;
 
       @media #{$mobile} {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         padding: 0;
       }
@@ -154,11 +154,11 @@
   }
 
   .NameSecond {
-    margin: 10px 30px 30px 30px;
+    margin: 0 30px 30px 30px;
     font-family: 'Proxima Nova Regular', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: calc( (100vw - 380px)/(1280 - 480) * (24 - 16) + 16px);
+    font-size: calc((100vw - 380px) / (1280 - 480) * (24 - 16) + 16px);
     line-height: 35px;
     text-align: right;
     text-transform: capitalize;
@@ -171,7 +171,7 @@
 
     @media #{$mobile} {
       margin: 0 16px 16px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       padding: 0;
     }
@@ -182,7 +182,7 @@
     font-family: 'Proxima Nova Regular', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: calc( (100vw - 980px)/(1280 - 480) * (14 - 6) + 6px);
+    font-size: calc((100vw - 980px) / (1280 - 480) * (14 - 6) + 6px);
     line-height: $base-spacing;
     text-align: right;
     letter-spacing: 0.05em;
@@ -194,12 +194,12 @@
     }
 
     @media #{$tabletMax} {
-      font-size: calc( (100vw - 800px)/(1280 - 480) * (14 - 6) + 6px);
+      font-size: calc((100vw - 800px) / (1280 - 480) * (14 - 6) + 6px);
       margin: 15px;
     }
 
     @media #{$tablet} {
-      font-size: calc( (100vw - 180px)/(1280 - 480) * (14 - 6) + 6px);
+      font-size: calc((100vw - 180px) / (1280 - 480) * (14 - 6) + 6px);
     }
 
     @media #{$mobile} {
@@ -208,6 +208,52 @@
       max-height: 25vw;
       margin: 0 16px 16px;
       padding: 0;
+    }
+  }
+
+  .Mobile {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3:first-child div {
+      margin: 0 -7px;
+    }
+  }
+
+  @media #{$mobile} {
+    .Mobile {
+
+      h3:first-child div {
+        margin: 0 -5px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(2) {
+        svg {
+          transform: rotate(180deg);
+          left: auto !important;
+          right: 0;
+        }
+
+        * {
+          text-align: left !important;
+        }
+      }
+
+      &:nth-child(3) {
+        svg {
+          transform: none !important;
+          left: 0;
+        }
+
+        * {
+          text-align: right !important;
+        }
+      }
     }
   }
 

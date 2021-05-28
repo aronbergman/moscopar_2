@@ -49,13 +49,12 @@
   font-family: 'Proxima Nova Regular', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: $base-spacing*3;
+  font-size: $base-spacing*2.5;
   line-height: 70px;
   letter-spacing: 0.05em;
   text-transform: lowercase;
   color: #000000;
   margin: 40px 40px 40px 0;
-
 
   @media #{$tabletMax} {
     font-size: 40px;

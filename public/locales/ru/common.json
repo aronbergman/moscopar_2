@@ -1,0 +1,21 @@
+{
+  "header": {
+    "change-locale": "FR",
+    "about": "о конференции",
+    "speaker": "спикеры",
+    "program": "программа",
+    "partners": "партнеры",
+    "information": "информация",
+    "question": "вопрос"
+  },
+  "main": {
+    "description": "24–25 июня ",
+    "online": "онлайн",
+    "title1": "российско-французская ",
+    "title2": "научно-практическая ",
+    "title3": "конференция"
+  },
+  "buttons": {
+    "registration": "регистрация"
+  }
+}

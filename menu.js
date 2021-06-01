@@ -1,8 +1,8 @@
 export const menu = [
-    {name: 'о&nbsp;конференции', link: '#about'},
-    {name: 'спикеры', link: '#speakers'},
-    {name: 'программа', link: '#schedule'},
-    {name: 'партнеры', link: '#partners'},
-    {name: 'информация', link: '#information'},
-    {name: 'вопрос', link: '#question'},
+    {name: 'about', link: '#about'},
+    {name: 'speaker', link: '#speakers'},
+    {name: 'program', link: '#schedule'},
+    {name: 'partners', link: '#partners'},
+    {name: 'information', link: '#information'},
+    {name: 'question', link: '#question'},
 ]

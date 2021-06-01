@@ -20,6 +20,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 688.719px;
+
+  @media #{$tabletMax} {
+    min-width: auto;
+  }
 
   @media #{$mobile} {
     width: 100%;

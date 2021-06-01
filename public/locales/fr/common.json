@@ -1,0 +1,21 @@
+{
+  "header": {
+    "change-locale": "RU",
+    "about": "à propos de la conférence",
+    "speaker": "intervenants",
+    "program": "programme",
+    "partners": "partenaires",
+    "information": "information",
+    "question": "question"
+  },
+  "main": {
+    "description": "24–25 juin ",
+    "online": "en ligne",
+    "title1": "conférence  ",
+    "title2": "scientifique ",
+    "title3": "franco-russe "
+  },
+  "buttons": {
+    "registration": "s’inscrire"
+  }
+}

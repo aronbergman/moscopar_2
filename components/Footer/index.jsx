@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.scss'
 import { menu } from "../../menu";
+import { withTranslation } from "../../i18n";
 
-const Footer = () => {
+const Footer = ({t}) => {
 
     return (
         <footer className={styles.Footer}>
@@ -14,7 +15,7 @@ const Footer = () => {
                 <div className={styles.Menu}>
                     {
                         menu.map(item => (
-                            <a href={item.link} className={styles.MenuItems} dangerouslySetInnerHTML={{__html: item.name}}/>
+                            <a href={item.link} className={styles.MenuItems}>{t(`header.${item.name}`)}</a>
                         ))
                     }
                 </div>
@@ -23,4 +24,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default withTranslation()(Footer);

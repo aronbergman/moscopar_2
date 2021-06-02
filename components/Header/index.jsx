@@ -7,7 +7,7 @@ import styles from './Header.module.scss'
 const Header = ({ t }) => {
     return (
         <>
-            <div className={styles.Text}>21–22 сентября <span>онлайн</span></div>
+            <div className={styles.Text}>{t(`main.description`)} <span>{t(`main.online`)}</span></div>
             <div className={styles.Header}>
                 <Burger/>
 

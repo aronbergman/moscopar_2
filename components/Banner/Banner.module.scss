@@ -14,8 +14,12 @@
   cursor: pointer;
 
   @media #{$mobile} {
+    &.fr {
+      background-image: url("../../public/banner-mobile-fr.png");
+    }
+
     width: 100%;
-    background-image: url("../../public/banner-mobile.png");
+    background-image: url("../../public/banner-mobile-ru.png");
     margin: 0;
   }
 

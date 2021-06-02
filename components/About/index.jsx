@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './About.module.scss'
 import { useSpring, animated, config } from 'react-spring'
-import { withTranslation } from "../../i18n";
+import { i18n, withTranslation } from "../../i18n";
 
-const About = ({t}) => {
+const About = ({ t }) => {
 
     function Number(num) {
         const [flip, set] = useState(false)
@@ -24,13 +24,14 @@ const About = ({t}) => {
             <div className={styles.Rows}>
                 <div className={styles.Container}>
                     <h1 className={styles.Title}>{t('about.title')}</h1>
-                    <div className={styles.Description} dangerouslySetInnerHTML={{__html: t('about.description')}}/>
-                    <div className={styles.DescriptionMobile} dangerouslySetInnerHTML={{__html: t('about.descriptionMobile')}}/>
+                    <div className={styles.Description} dangerouslySetInnerHTML={{ __html: t('about.description') }}/>
+                    <div className={styles.DescriptionMobile}
+                         dangerouslySetInnerHTML={{ __html: t('about.descriptionMobile') }}/>
                 </div>
                 <div className={styles.Image}/>
             </div>
 
-            <div className={styles.Counts}>
+            <div className={[styles.Counts, i18n.language === 'fr' ? styles.fr : null].join(' ')}>
                 <div className={styles.CountItem}><span>{Number(2)}</span> <p>{t('about.day')}</p></div>
                 <div className={styles.CountLine}/>
                 <div className={styles.CountItem}><span>{Number(300)}</span> <p>{t('about.people')}</p></div>

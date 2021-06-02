@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Banner.module.scss'
-import { withTranslation } from "../../i18n";
+import { i18n, withTranslation } from "../../i18n";
 
 const Banner = ({t}) => {
     const link = 'https://events.webinar.ru/38722755/moscopar/'
@@ -10,7 +10,7 @@ const Banner = ({t}) => {
     }
 
     return (
-        <div className={styles.Banner} onClick={onClick}>
+        <div className={[styles.Banner, i18n.language === 'fr' ? styles.fr : null].join(' ')} onClick={onClick}>
             <h3 className={styles.Title}>{t('banner.title1')} <br/>
                 {t('banner.title2')} <br/>
                 {t('banner.title3')}

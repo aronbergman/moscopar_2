@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { menu } from "../../../menu";
+import { i18n, withTranslation } from "../../../i18n";
+import styles from "../Header.module.scss";
 
-const Burger = () => {
+const Burger = ({ t }) => {
     useEffect(
         () => {
             (function () {
@@ -32,11 +34,15 @@ const Burger = () => {
     return (
         <>
             <div className="b-nav">
+                <div className={styles.MenuItems}
+                     onClick={() => i18n.changeLanguage(i18n.language === 'fr' ? 'ru' : 'fr')}>
+                    {t('header.change-locale')}
+                </div>
 
                 {menu.map((item, index) =>
                     <li key={index}><a className="b-link"
-                           href={item.link}
-                           dangerouslySetInnerHTML={{ __html: item.name }}/>
+                                       href={item.link}
+                                       dangerouslySetInnerHTML={{ __html: t(`header.${item.name}`) }}/>
                     </li>
                 )}
             </div>
@@ -54,4 +60,4 @@ const Burger = () => {
     );
 };
 
-export default Burger;
+export default withTranslation()(Burger);

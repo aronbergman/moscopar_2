@@ -11,9 +11,10 @@ import pronin from '../../public/pronin.jpg'
 import drobyshevskaya from '../../public/drobyshevskaya.jpg'
 import kaminsky from '../../public/kaminsky.jpg'
 import orlovaMorozova from '../../public/orlovaMorozova.jpg'
+import { withTranslation } from "../../i18n";
 
 
-const Speakers = () => {
+const Speakers = ({t}) => {
     var settings = {
         dots: true,
         infinite: true,
@@ -35,7 +36,7 @@ const Speakers = () => {
 
     return (
         <div className={styles.Speakers} id="speakers">
-            <h2 className={styles.Title}>спикеры</h2>
+            <h2 className={styles.Title}>{t('speakers.title')}</h2>
 
             <Slider {...settings}>
                 <div className={styles.RadiusAndColors}>
@@ -43,9 +44,9 @@ const Speakers = () => {
                         <div className={styles.Mobile}>
                             <Square photo={katlama} color={'#FF005C'}/>
                             <Square
-                                nameFirst={' Кристин '}
-                                nameSecond={' Катлама '}
-                                description={'профессор Университета Сорбонны, Института общественного здравоохранения и эпидемиологии им. Пьера Луи Пастера, руководитель исследовательской группы по антиретровирусной стратегии Французского национального агентства по исследованию ВИЧ, основатель и президент AFRAVIH, член правления EACS'}
+                                nameFirst={t('speakers.katlama.nameFirst')}
+                                nameSecond={t('speakers.katlama.nameSecond')}
+                                description={t('speakers.katlama.description')}
                                 arrow={'right'}
                                 color={'#FF005C'}
                             />
@@ -53,9 +54,9 @@ const Speakers = () => {
                         <div className={styles.Mobile}>
                             <Square photo={otran} color={'#002381'}/>
                             <Square
-                                nameFirst={' Брижит '}
-                                nameSecond={' Отран '}
-                                description={'профессор иммунологии в Университетской больнице Питье-Сальпетриер в Париже, Университета Пьера и Марии Кюри, Франция'}
+                                nameFirst={t('speakers.otran.nameFirst')}
+                                nameSecond={t('speakers.otran.nameSecond')}
+                                description={t('speakers.otran.description')}
                                 arrow={'right'}
                                 color={'#002381'}
                                 textColor={'white'}
@@ -63,9 +64,9 @@ const Speakers = () => {
                         </div>
                         <div className={styles.Mobile}>
                             <Square
-                                nameFirst={' Анн-Женевьев '}
-                                nameSecond={' Марселин '}
-                                description={'профессор медицины в Университете Сорбонны в Париже, Франция, клинический вирусолог в больнице Питье-Сальпетриер'}
+                                nameFirst={t('speakers.marselin.nameFirst')}
+                                nameSecond={t('speakers.marselin.nameSecond')}
+                                description={t('speakers.marselin.description')}
                                 arrow={'left'}
                                 color={'#265CDD'}
                                 nameColor={'#00CFFF'}
@@ -75,9 +76,9 @@ const Speakers = () => {
                         </div>
                         <div className={styles.Mobile}>
                             <Square
-                                nameFirst={' Роман '}
-                                nameSecond={' Палих '}
-                                description={'врач отделения инфекционных заболеваний Больницы Питье-Сальпетриер'}
+                                nameFirst={t('speakers.palih.nameFirst')}
+                                nameSecond={t('speakers.palih.nameSecond')}
+                                description={t('speakers.palih.description')}
                                 arrow={'left'}
                                 color={'#00CFFF'}/>
                             <Square photo={palih} color={'#fff'}/>
@@ -89,9 +90,9 @@ const Speakers = () => {
                         <div className={styles.Mobile}>
                             <Square photo={pronin} color={'#FF005C'}/>
                             <Square
-                                nameFirst={' Пронин '}
-                                nameSecond={' Александр Юрьевич '}
-                                description={'главный врач Московского Областного Центра СПИД. главный внештатный специалист Министерства здравоохранения Московской области по проблемам диагностики и лечения ВИЧ-инфекции, к.м.н.'}
+                                nameFirst={t('speakers.pronin.nameFirst')}
+                                nameSecond={t('speakers.pronin.nameSecond')}
+                                description={t('speakers.pronin.description')}
                                 arrow={'right'}
                                 color={'#FF005C'}
                             />
@@ -99,9 +100,9 @@ const Speakers = () => {
                         <div className={styles.Mobile}>
                             <Square photo={drobyshevskaya} color={'#002381'}/>
                             <Square
-                                nameFirst={' Дробышевская '}
-                                nameSecond={' Елена Владимировна '}
-                                description={'заместитель главного врача по медицинской части Московского Областного Центра СПИД, врач высшей категории'}
+                                nameFirst={t('speakers.drobyshevskaya.nameFirst')}
+                                nameSecond={t('speakers.drobyshevskaya.nameSecond')}
+                                description={t('speakers.drobyshevskaya.description')}
                                 arrow={'right'}
                                 color={'#002381'}
                                 textColor={'white'}
@@ -109,9 +110,9 @@ const Speakers = () => {
                         </div>
                         <div className={styles.Mobile}>
                             <Square
-                                nameFirst={' Орлова-Морозова '}
-                                nameSecond={' Елена Александровна '}
-                                description={'заведующая амбулаторно-поликлиническим отделением Московского Областного Центра СПИД, к.м.н.'}
+                                nameFirst={t('speakers.orlovaMorozova.nameFirst')}
+                                nameSecond={t('speakers.orlovaMorozova.nameSecond')}
+                                description={t('speakers.orlovaMorozova.description')}
                                 arrow={'left'}
                                 color={'#265CDD'}
                                 nameColor={'#00CFFF'}
@@ -121,9 +122,9 @@ const Speakers = () => {
                         </div>
                         <div className={styles.Mobile}>
                             <Square
-                                nameFirst={' Каминский '}
-                                nameSecond={' Григорий Дмитриевич '}
-                                description={'руководитель отдела инфекционной патологии НМИЦ ФПИ, врач-инфекционист, доктор медицинских наук'}
+                                nameFirst={t('speakers.kaminsky.nameFirst')}
+                                nameSecond={t('speakers.kaminsky.nameSecond')}
+                                description={t('speakers.kaminsky.description')}
                                 arrow={'left'}
                                 color={'#00CFFF'}/>
                             <Square photo={kaminsky} color={'#fff'}/>
@@ -135,4 +136,4 @@ const Speakers = () => {
     );
 };
 
-export default Speakers;
+export default withTranslation()(Speakers);

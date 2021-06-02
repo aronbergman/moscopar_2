@@ -11,19 +11,20 @@ import image7 from '../../public/partners/7.png'
 import image8 from '../../public/partners/8.png'
 import image9 from '../../public/partners/9.png'
 import image10 from '../../public/partners/10.png'
+import { withTranslation } from "../../i18n";
 
-const Partners = () => {
+const Partners = ({ t }) => {
     const partners = [
-        {image: image3},
-        {image: image9},
-        {image: image6},
-        {image: image1},
-        {image: image4},
-        {image: image2},
-        {image: image7},
-        {image: image5},
-        {image: image8},
-        {image: image10},
+        { image: image3 },
+        { image: image9 },
+        { image: image6 },
+        { image: image1 },
+        { image: image4 },
+        { image: image2 },
+        { image: image7 },
+        { image: image5 },
+        { image: image8 },
+        { image: image10 },
     ]
 
     const settings = {
@@ -38,37 +39,29 @@ const Partners = () => {
 
     return (
         <div className={styles.Partners} id="partners">
-            <h2 className={styles.Title}>партнеры</h2>
+            <h2 className={styles.Title}>{t('partners.title')}</h2>
 
             <div className={styles.Images}>
                 {
-                    partners.map((i, index) => {
-
-                        return(
-                            <div
-                                key={index}
-                                className={styles.Image}
-                                style={{backgroundImage: `url(${i.image})`}}/>
-                        )
-                    })
-                }
+                    partners.map((i, index) => (
+                        <div
+                            key={index}
+                            className={styles.Image}
+                            style={{ backgroundImage: `url(${i.image})` }}/>
+                    ))}
             </div>
 
             <div className={styles.ImagesSlider}>
                 <Slider {...settings}>
                     {
-                        partners.map((i, index) => {
-
-                            return(
-                                <div>
-                                    <div
-                                        key={index}
-                                        className={styles.Image}
-                                        style={{backgroundImage: `url(${i.image})`}}/>
-                                </div>
-                            )
-                        })
-                    }
+                        partners.map((i, index) => (
+                            <div>
+                                <div
+                                    key={index}
+                                    className={styles.Image}
+                                    style={{ backgroundImage: `url(${i.image})` }}/>
+                            </div>
+                        ))}
                 </Slider>
             </div>
 
@@ -77,4 +70,4 @@ const Partners = () => {
     );
 };
 
-export default Partners;
+export default withTranslation()(Partners);

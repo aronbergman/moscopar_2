@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Event.module.scss'
+import { withTranslation } from "../../../i18n";
 
-const Event = ({ events }) => {
+const Event = ({ events, t }) => {
+    const [on, off] = [t('events.on'), t('events.off')]
     return (
         <div className={styles.Event}>
             {events.map((event) => {
@@ -18,7 +20,7 @@ const Event = ({ events }) => {
                             </div>
                             <div className={styles.Button}>
                                 <div className={cls.join(' ')}/>
-                                {open ? 'свернуть' : 'развернуть'}
+                                {open ? off : on}
                             </div>
                         </div>
                         {open && <div className={styles.Timetable}>
@@ -33,7 +35,8 @@ const Event = ({ events }) => {
                                     return (
                                         <div className={styles.TimetableRow}>
                                             <div className={styles.TimetableTime}>
-                                                <div className={styles.TimeEvent} dangerouslySetInnerHTML={{__html: event.time}}/>
+                                                <div className={styles.TimeEvent}
+                                                     dangerouslySetInnerHTML={{ __html: event.time }}/>
                                                 <div className={styles.SessionEvent}>{event.session}</div>
                                                 {event.moderators && <div className={styles.ModeratorsEvent}>
                                                     <span>Модераторы:</span>
@@ -93,4 +96,4 @@ const Event = ({ events }) => {
     );
 }
 
-export default Event;
+export default withTranslation()(Event);

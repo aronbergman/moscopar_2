@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import styles from './Question.module.scss'
 import Button from "../Button/Button";
 import axios from "axios";
+import { withTranslation } from "../../i18n";
 
-const Question = () => {
+const Question = ({t}) => {
     const [state, setState] = useState({
         question: '',
         name: '',
@@ -46,7 +47,7 @@ const Question = () => {
 
     return (
         <div className={styles.Question} id="question">
-            <h2 className={styles.Title}>задать вопрос</h2>
+            <h2 className={styles.Title}>{t('question.title')}</h2>
 
             <form onSubmit={handleSubmit}>
                 <div className={styles.Form}>
@@ -65,7 +66,7 @@ const Question = () => {
                 </div>
 
                 <div className={styles.FormSubmit}>
-                    <Button label={"отправить"} color={'#000'} submit/>
+                    <Button label={t('question.send')} color={'#000'} submit/>
 
                     <div className={styles.CheckBox}>
                         <label className={styles.checkbox}>
@@ -74,7 +75,7 @@ const Question = () => {
                             />
                             <span/>
                         </label>
-                        <p>я согласен с условиями и способами обработки и хранения персональных данных</p>
+                        <p>{t('question.right')}</p>
                     </div>
                 </div>
 
@@ -84,4 +85,4 @@ const Question = () => {
     );
 };
 
-export default Question;
+export default withTranslation()(Question);

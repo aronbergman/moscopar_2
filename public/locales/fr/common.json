@@ -17,5 +17,94 @@
   },
   "buttons": {
     "registration": "s’inscrire"
+  },
+  "about": {
+    "title": "à propos de la conférence",
+    "description": "La conférence aura lieu en ligne les 24 et 25 juin 2021. Elle réunira les experts russes et français en matière du VIH qui discuteront des traitements modernes des infections à VIH, de l’influence de la COVID-19 sur les soins apportés aux patients atteints du VIH, de l’optimisation du système des soins médicaux apportés aux malades du VIH, des pratiques permettant l’accès efficace aux groupes vulnérables et de nouvelles approches dans le diagnostic en laboratoire des infections au VIH et des co-infections.",
+    "descriptionMobile": "",
+    "day": "jours",
+    "people": "participants",
+    "sessions": "sessions",
+    "hour": "heures",
+    "speakers": "intervenants"
+  },
+  "speakers": {
+    "title": "intervenants",
+    "katlama": {
+      "nameFirst": " Christine ",
+      "nameSecond": " Katlama ",
+      "description": "professeur à Sorbonne Université à Paris, professeur à l’Institut Pierre Louis d’Épidémiologie et de Santé Publique (iPLESP). Elle dirige l’unité de recherche sur les stratégies antivirales à l’Agence nationale de recherche sur le SIDA. Fondatrice et présidente de l’AFRAVIH, membre du conseil d’administration de EACS"
+    },
+    "otran": {
+      "nameFirst": " Brigitte ",
+      "nameSecond": " Autran ",
+      "description": "professeur d’immunologie à l’hôpital de la Pitié-Salpêtrière à Paris et à l’Université Pierre et Marie Curie, France"
+    },
+    "marselin": {
+      "nameFirst": " Anne-Geneviève ",
+      "nameSecond": " Marcelin ",
+      "description": "professeur de médecine à Sorbonne Université à Paris, France, virologue à l’hôpital de la Pitié-Salpêtrière"
+    },
+    "palih": {
+      "nameFirst": " Romain ",
+      "nameSecond": " Palich ",
+      "description": "médecin du Service des maladies infectieuses et tropicales à l’hôpital de la Pitié-Salpêtrière"
+    },
+    "pronin": {
+      "nameFirst": " Pronine ",
+      "nameSecond": " Alexandre ",
+      "description": "médecin-directeur du Centre régional du VIH/SIDA de Moscou, spécialiste principal du diagnostic et du traitement des infections à VIH au Ministère de la santé de la Région de Moscou, Dr. Méd"
+    },
+    "drobyshevskaya": {
+      "nameFirst": " Drobychevskaïa ",
+      "nameSecond": " Elena ",
+      "description": "médecin-directeur adjoint du Centre régional du VIH/SIDA de Moscou, médecin de catégorie supérieure"
+    },
+    "orlovaMorozova": {
+      "nameFirst": " Orlova-Morozova ",
+      "nameSecond": " Elena ",
+      "description": "directeur du service des soins ambulatoires au Centre régionale du VIH/SIDA de Moscou, Dr. Méd."
+    },
+    "kaminsky": {
+      "nameFirst": " Kaminski ",
+      "nameSecond": " Grigori ",
+      "description": "Directeur du service de pathologie infectieuse au Centre de recherche en phtisiopneumologie et maladies infectieuses, médecin-infectiologue, docteur d’Etat en sciences médicales"
+    }
+  },
+  "events": {
+    "title": "programme",
+    "on": "ouvrir",
+    "off": "minus"
+  },
+  "partners": {
+    "title": "partenaires"
+  },
+  "banner": {
+    "title1": "joignez-vous ",
+    "title2": "à plus de 300 ",
+    "title3": "participants",
+    "registration": "inscription"
+  },
+  "information": {
+    "title1": "information",
+    "title2": "pour les participants",
+    "what": "comment participer",
+    "item1": {
+      "title": "inscrivez-vous",
+      "description": "Inscrivez-vous en utilisant le lien sur notre site ou en consultant la newsletter sur votre boîte mail. Vous recevrez par la suite le lien de l’événement en ligne et son programme détaillé."
+    },
+    "item2": {
+      "title": "vérifiez la connexion",
+      "description": "Nous vous recommandons d’utiliser Google Chrome ou Opéra. Il est souhaitable d’avoir une bonne connexion Internet dont le débit n’est pas inférieur à 20 Mbps."
+    }
+  },
+  "question": {
+    "title": "poser une question",
+    "send": "envoyer",
+    "right": "j’accepte les conditions du traitement et du stockage des données à caractère personnel",
+    "email": "email",
+    "name": "Nom, prenom",
+    "phone": "phone",
+    "question": "une question"
   }
 }

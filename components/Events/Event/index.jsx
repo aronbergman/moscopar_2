@@ -26,7 +26,7 @@ const Event = ({ events, t }) => {
                         {open && <div className={styles.Timetable}>
                             <div className={styles.TimetableRow}>
                                 <div className={styles.TimetableTime}>
-                                    <p>здесь и далее <br/>время московское</p>
+                                    <p>{t('events-title.time1')} <br/>{t('events-title.time2')}</p>
                                 </div>
                             </div>
                             {
@@ -39,7 +39,7 @@ const Event = ({ events, t }) => {
                                                      dangerouslySetInnerHTML={{ __html: event.time }}/>
                                                 <div className={styles.SessionEvent}>{event.session}</div>
                                                 {event.moderators && <div className={styles.ModeratorsEvent}>
-                                                    <span>Модераторы:</span>
+                                                    <span>{t('events-title.moderators')}:</span>
                                                     {event.moderators.map(i => <span>{i}</span>)}
                                                 </div>}
 
@@ -49,7 +49,7 @@ const Event = ({ events, t }) => {
                                                      dangerouslySetInnerHTML={{ __html: event.title }}/>
 
                                                 {event.moderators && <div className={styles.ModeratorsEventMobile}>
-                                                    <span>Модераторы:</span>
+                                                    <span>{t('events-title.moderators')}:</span>
                                                     {event.moderators.map(i => <span>{i}</span>)}
                                                 </div>}
 

@@ -106,5 +106,223 @@
     "name": "nom, prenom",
     "phone": "phone",
     "question": "une question"
+  },
+  "events-title": {
+    "time1": "heure de",
+    "time2": "Paris, France",
+    "moderators": "Animateurs"
+  },
+  "day1": {
+    "date": "24 / 06",
+    "dayOfWeek": "jeudi",
+    "timetable": {
+      "1": {
+        "time": "12:00",
+        "title": "début de la retransmission, diffusion des vidéos"
+      },
+      "2": {
+        "time": "12:30",
+        "title": "ouverture de la conférence",
+        "talks": {
+          "1": {
+            "title": "",
+            "name": "Alexandre PRONINE",
+            "company": "Centre de prévention et de lutte contre le SIDA et les maladies infectieuses"
+          },
+          "2": {
+            "title": "",
+            "name": "Christine KATLAMA",
+            "company": "Hôpital de la Pitié-Salpêtrière"
+          },
+          "3": {
+            "title": "",
+            "name": "Marc-Antoine VALENTIN ",
+            "company": "Hôpital de la Pitié-Salpêtrière"
+          },
+          "4": {
+            "title": "",
+            "name": "Alain BURDET ",
+            "company": "AP-HP International"
+          }
+        }
+      },
+      "3": {
+        "time": "13:00&nbsp;— 15:00",
+        "session": "session 1",
+        "moderators": {
+          "1": "Marc-Antoine VALENTIN",
+          "2": "Elena ORLOVA-MOROZOVA"
+        },
+        "title": "soins médicaux en cas d’infections à VIH",
+        "talks": {
+          "1": {
+            "title": "Nouveaux médicaments, nouvelles stratégies de traitement",
+            "name": "Christine KATLAMA"
+          },
+          "2": {
+            "title": "Infection à VIH dans la Région de Moscou : avancées et nouveaux défis",
+            "name": "Elena DROBYCHEVSKAÏA"
+          },
+          "3": {
+            "title": "Clinique pour le traitement d’infection à VIH : comment optimiser le travail en 2021 ?",
+            "name": "Roland TUBIANA"
+          },
+          "4": {
+            "title": "VIH au sein des groupes vulnérables : comment atteindre chaque personne malade ? (projet OPTICARE) ",
+            "name": "L’animateur est à préciser"
+          }
+        }
+      },
+      "4": {
+        "time": "14:20 – 15:00",
+        "title": "table ronde"
+      },
+      "5": {
+        "time": "15:00 – 15:15",
+        "title": "pause"
+      },
+      "6": {
+        "time": "15:15 – 18:00",
+        "session": "Session 2",
+        "moderators": {
+          "1": "Brigitte AUTRAN",
+          "2": "Grigori KAMINSKI"
+        },
+        "title": "nouvelle réalité : « COVID-19 et VIH »",
+        "talks": {
+          "1": {
+            "title": "SARS-COV-2 – maladie à plusieurs visages",
+            "name": "Professeur Vincent CALVEZ"
+          },
+          "2": {
+            "title": "COVID-19 : réponse immunitaire et vaccination des séropositifs",
+            "name": "Professeur Brigitte AUTRAN"
+          },
+          "3": {
+            "title": "Vaccination contre la COVID-19",
+            "experience": {
+              "1": {
+                "title": "Expérience russe",
+                "name": "Professeur Grigori KAMINSKI"
+              },
+              "2": {
+                "title": "Expérience française",
+                "name": "Marc-Antoine VALENTIN"
+              }
+            }
+          },
+          "4": {
+            "title": "Pandémies parallèles : influences réciproques du VIH et de la COVID-19 sur les soins médicaux",
+            "experience": {
+              "1": {
+                "title": "Expérience de la Région de Moscou",
+                "name": "Elena DROBYCHEVSKAÏA"
+              },
+              "2": {
+                "title": "Expérience de l’Hôpital de la Pitié-Salpêtrière",
+                "name": "Romain Palich"
+              }
+            }
+          }
+        }
+      },
+      "7": {
+        "time": "17:15 – 18:00",
+        "title": "table ronde"
+      }
+    }
+  },
+  "day2": {
+    "date": "25 / 06",
+    "dayOfWeek": "vendredi",
+    "timetable": {
+      "1": {
+        "time": "12:00",
+        "title": "début de la retransmission, diffusion des vidéos"
+      },
+      "2": {
+        "time": "12:30 – 14:00",
+        "title": "améliorer la qualité des soins de l’infection à VIH en laboratoire",
+        "session": "Session 3",
+        "moderators": {
+          "1": "Anne-Geneviève MARCELIN",
+          "2": "Natalia LEBEDEVA",
+          "3": "Alexandre PRONINE"
+        },
+        "talks": {
+          "1": {
+            "title": "Possibilités du diagnostic en laboratoire : la pratique clinique, de quoi a-t-elle besoin ?",
+            "experience": {
+              "1": {
+                "title": "Expérience de l’Hôpital de la Pitié-Salpêtrière",
+                "name": "Anne-Geneviève MARCELIN"
+              },
+              "2": {
+                "title": "Expérience de la Région de Moscou",
+                "name": "Igor SERKOV"
+              }
+            }
+          },
+          "2": {
+            "title": "Avantages des mesures de concentration de la thérapie antirétrovirale",
+            "name": "Gilles PEYTAVIN"
+          },
+          "3": {
+            "title": "Pharmacorésistance du VIH chez les patients de la Région de Moscou commençant le traitement",
+            "name": "Natalia LEBEDEVA"
+          }
+        }
+      },
+      "3": {
+        "time": "13:30 – 14:00",
+        "title": "table ronde"
+      },
+      "4": {
+        "time": "14:00 – 14:15",
+        "title": "pause"
+      },
+      "5": {
+        "time": "14:15 – 15:00",
+        "moderators": {
+          "1": "Christine KATLAMA",
+          "2": "Elena ORLOVA-MOROZOVA",
+          "3": "Alexeï KRAVCHENKO"
+        },
+        "title": "traitement du VIH en cas d’échecs virologiques",
+        "talks": {
+          "1": {
+            "experience": {
+              "1": {
+                "title": "Expérience de l’Hôpital de la Pitié-Salpêtrière",
+                "name": "Marc-Antoine VALENTIN"
+              },
+              "2": {
+                "title": "Expérience de la Région de Moscou",
+                "name": "Elena ORLOVA-MOROZOVA",
+                "other": "Exemples cliniques"
+              }
+            }
+          }
+        }
+      },
+      "6": {
+        "title": "table ronde",
+        "time": "14:15 – 15:00"
+      },
+      "7": {
+        "time": "15:00 – 15:30",
+        "title": "clôture de la conférence",
+        "talks": {
+          "1": {
+            "name": "Alexandre PRONINE",
+            "company": "Centre de prévention et de lutte contre le SIDA et les maladies infectieuses"
+          },
+          "2": {
+            "name": "Christine KATLAMA",
+            "company": "Hôpital de la Pitié-Salpêtrière"
+          }
+        }
+      }
+    }
   }
 }

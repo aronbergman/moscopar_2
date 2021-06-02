@@ -4,20 +4,21 @@ import { useSpring, animated, config } from 'react-spring'
 import { i18n, withTranslation } from "../../i18n";
 
 const About = ({ t }) => {
+    const cls = [styles.Counts, t('header.change-locale')]
 
-    function Number(num) {
-        const [flip, set] = useState(false)
-        const { number } = useSpring({
-            reset: true,
-            reverse: flip,
-            from: { number: 0 },
-            number: num,
-            delay: 200,
-            config: config.molasses,
-        })
+        function Number(num) {
+            const [flip, set] = useState(false)
+            const { number } = useSpring({
+                reset: true,
+                reverse: flip,
+                from: { number: 0 },
+                number: num,
+                delay: 200,
+                config: config.molasses,
+            })
 
-        return <animated.div>{number.to(n => n.toFixed(0))}</animated.div>
-    }
+            return <animated.div>{number.to(n => n.toFixed(0))}</animated.div>
+        }
 
     return (
         <div className={styles.About} id="about">
@@ -31,7 +32,7 @@ const About = ({ t }) => {
                 <div className={styles.Image}/>
             </div>
 
-            <div className={[styles.Counts, i18n.language === 'fr' ? styles.fr : null].join(' ')}>
+            <div className={cls.join(' ')}>
                 <div className={styles.CountItem}><span>{Number(2)}</span> <p>{t('about.day')}</p></div>
                 <div className={styles.CountLine}/>
                 <div className={styles.CountItem}><span>{Number(300)}</span> <p>{t('about.people')}</p></div>

@@ -13,11 +13,13 @@
   margin: 0 0 6em;
   cursor: pointer;
 
-  @media #{$mobile} {
-    &.fr {
+  &:global(.RU) {
+    @media #{$mobile} {
       background-image: url("../../public/banner-mobile-fr.png");
     }
+  }
 
+  @media #{$mobile} {
     width: 100%;
     background-image: url("../../public/banner-mobile-ru.png");
     margin: 0;

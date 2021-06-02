@@ -119,7 +119,7 @@
     margin: 140px 119px 6em;
     width: auto;
 
-    &.fr {
+    &:global(.RU) {
       background-image: url("../../public/about-titles-fr.png");
     }
 

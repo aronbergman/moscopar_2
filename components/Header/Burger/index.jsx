@@ -33,12 +33,11 @@ const Burger = ({ t }) => {
 
     return (
         <>
+            <div className={styles.MenuItems}
+                 onClick={() => i18n.changeLanguage(i18n.language === 'fr' ? 'ru' : 'fr')}>
+                {t('header.change-locale')}
+            </div>
             <div className="b-nav">
-                <div className={styles.MenuItems}
-                     onClick={() => i18n.changeLanguage(i18n.language === 'fr' ? 'ru' : 'fr')}>
-                    {t('header.change-locale')}
-                </div>
-
                 {menu.map((item, index) =>
                     <li key={index}><a className="b-link"
                                        href={item.link}

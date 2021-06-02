@@ -47,6 +47,17 @@
   height: $base-spacing*1.1;
   cursor: pointer;
 
+  @media #{$tabletMax} {
+    z-index: 112;
+    position: fixed;
+    top: 50px;
+    right: 70px;
+  }
+
+  @media #{$mobile} {
+    right: 90px;
+  }
+
   @media #{$mobile} {
     margin: 0;
   }

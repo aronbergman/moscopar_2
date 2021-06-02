@@ -34,9 +34,9 @@ const Events = ({ t }) => {
                             company: t('day1.timetable.2.talks.3.company')
                         },
                         {
-                            title: t('day1.timetable.2.talks.3.title'),
-                            name: t('day1.timetable.2.talks.3.name'),
-                            company: t('day1.timetable.2.talks.3.company')
+                            title: t('day1.timetable.2.talks.4.title'),
+                            name: t('day1.timetable.2.talks.4.name'),
+                            company: t('day1.timetable.2.talks.4.company')
                         }
                     ]
                 },

@@ -33,7 +33,7 @@ const Burger = ({ t }) => {
 
     return (
         <>
-            <div className={styles.MenuItems}
+            <div className={styles.MenuItemsMobile}
                  onClick={() => i18n.changeLanguage(i18n.language === 'fr' ? 'ru' : 'fr')}>
                 {t('header.change-locale')}
             </div>

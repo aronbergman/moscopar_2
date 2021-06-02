@@ -63,6 +63,30 @@
   }
 }
 
+.MenuItemsMobile {
+  display: none;
+  margin: 0 $base-spacing;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $base-spacing;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-decoration: none;
+  height: $base-spacing*1.1;
+  cursor: pointer;
+
+  @media #{$tabletMax} {
+    display: block;
+    z-index: 112;
+    position: fixed;
+    top: 50px;
+    right: 70px;
+    color: #444444;
+  }
+}
+
 .Logo {
   width: $base-spacing*12;
   height: $base-spacing*6;

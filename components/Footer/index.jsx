@@ -9,8 +9,8 @@ const Footer = ({t}) => {
         <footer className={styles.Footer}>
             <div className={styles.Container}>
                 <div className={styles.Contacts}>
-                    <a href="tel:88001234567">8 (800) 123-45-67</a>
-                    <a href="mailto:moscopar@gmail.com">moscopar@gmail.com</a>
+                    <a href="tel:84958492969">+7 (495) 849-29-69</a>
+                    <a href="mailto:info@spid.center">info@spid.center</a>
                 </div>
                 <div className={styles.Menu}>
                     {

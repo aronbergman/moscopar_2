@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import axios from "axios";
 import { withTranslation } from "../../i18n";
 
-const Question = ({t}) => {
+const Question = ({ t }) => {
     const [state, setState] = useState({
         question: '',
         name: '',
@@ -52,12 +52,13 @@ const Question = ({t}) => {
             <form onSubmit={handleSubmit}>
                 <div className={styles.Form}>
                     <div className={styles.FormQuestion}>
-                        <textarea placeholder="вопрос" name="question" value={state.question}
+                        <textarea placeholder={t('question.question')} name="question" value={state.question}
                                   onChange={handleChange}/>
                     </div>
                     <div className={styles.FormContact}>
-                        <input placeholder="ФИО" type="text" name="name" value={state.name} onChange={handleChange}/>
-                        <input placeholder="телефон" type="text" name="phone" value={state.phone}
+                        <input placeholder={t('question.name')} type="text" name="name" value={state.name}
+                               onChange={handleChange}/>
+                        <input placeholder={t('question.phone')} type="text" name="phone" value={state.phone}
                                onChange={handleChange}/>
                         <input placeholder="e-mail" type="text" name="email" value={state.email}
                                onChange={handleChange}/>

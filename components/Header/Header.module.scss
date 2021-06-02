@@ -45,6 +45,7 @@
   color: #000000;
   text-decoration: none;
   height: $base-spacing*1.1;
+  cursor: pointer;
 
   @media #{$mobile} {
     margin: 0;

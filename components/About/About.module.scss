@@ -119,10 +119,6 @@
     margin: 140px 119px 6em;
     width: auto;
 
-    &:global(.RU) {
-      background-image: url("../../public/about-titles-fr.png");
-    }
-
     @media #{$tablet} {
       background-image: url("../../public/about-titles-ru.png");
       background-size: contain;
@@ -132,6 +128,10 @@
       box-sizing: border-box;
       height: 300px;
       margin: 100px 0 0 40px;
+
+      &:global(.RU) {
+        background-image: url("../../public/about-titles-fr.png");
+      }
     }
 
     @media #{$mobile} {
@@ -143,6 +143,10 @@
       width: calc(100% - 40px);
       margin: 20px 0 0 40px;
       box-sizing: border-box;
+
+      &:global(.RU) {
+        background-image: url("../../public/about-titles-fr.png");
+      }
     }
   }
 

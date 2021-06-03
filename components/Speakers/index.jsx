@@ -11,6 +11,9 @@ import pronin from '../../public/pronin.jpg'
 import drobyshevskaya from '../../public/drobyshevskaya.jpg'
 import kaminsky from '../../public/kaminsky.jpg'
 import orlovaMorozova from '../../public/orlovaMorozova.jpg'
+
+import serkov from '../../public/serkov.jpg'
+import lebedeva from '../../public/lebedeva.jpg'
 import { withTranslation } from "../../i18n";
 
 
@@ -85,6 +88,7 @@ const Speakers = ({t}) => {
                         </div>
                     </div>
                 </div>
+
                 <div className={styles.RadiusAndColorsSecond}>
                     <div className={styles.Squires}>
                         <div className={styles.Mobile}>
@@ -128,6 +132,32 @@ const Speakers = ({t}) => {
                                 arrow={'left'}
                                 color={'#00CFFF'}/>
                             <Square photo={kaminsky} color={'#fff'}/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.RadiusAndColorsSecond}>
+                    <div className={styles.Squires}>
+                        <div className={styles.Mobile}>
+                            <Square photo={serkov} color={'#FF005C'}/>
+                            <Square
+                                nameFirst={t('speakers.serkov.nameFirst')}
+                                nameSecond={t('speakers.serkov.nameSecond')}
+                                description={t('speakers.serkov.description')}
+                                arrow={'right'}
+                                color={'#FF005C'}
+                            />
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square photo={lebedeva} color={'#002381'}/>
+                            <Square
+                                nameFirst={t('speakers.lebedeva.nameFirst')}
+                                nameSecond={t('speakers.lebedeva.nameSecond')}
+                                description={t('speakers.lebedeva.description')}
+                                arrow={'right'}
+                                color={'#002381'}
+                                textColor={'white'}
+                            />
                         </div>
                     </div>
                 </div>

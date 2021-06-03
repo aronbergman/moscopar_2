@@ -68,7 +68,17 @@
     "kaminsky": {
       "nameFirst": " Kaminski ",
       "nameSecond": " Grigori ",
-      "description": "Directeur du service de pathologie infectieuse au Centre de recherche en phtisiopneumologie et maladies infectieuses, médecin-infectiologue, docteur d’Etat en sciences médicales"
+      "description": "directeur du service de pathologie infectieuse au Centre de recherche en phtisiopneumologie et maladies infectieuses, médecin-infectiologue, docteur d’Etat en sciences médicales"
+    },
+    "serkov": {
+      "nameFirst": " Serkov ",
+      "nameSecond": " Igor ",
+      "description": "chef du laboratoire de diagnostic clinique du Centre régional de lutte contre le sida de Moscou"
+    },
+    "lebedeva": {
+      "nameFirst": " Lebedeva ",
+      "nameSecond": " Natalia ",
+      "description": "docteur en diagnostic clinique et de laboratoire du Centre régional de lutte contre le sida de Moscou"
     }
   },
   "events": {
@@ -169,7 +179,7 @@
           },
           "4": {
             "title": "VIH au sein des groupes vulnérables : comment atteindre chaque personne malade ? (projet OPTICARE) ",
-            "name": "L’animateur est à préciser"
+            "name": "Dr Sophie Seang - Mrs Elise Charbonnier"
           }
         }
       },
@@ -192,7 +202,7 @@
         "talks": {
           "1": {
             "title": "SARS-COV-2 – maladie à plusieurs visages",
-            "name": "Professeur Vincent CALVEZ"
+            "name": "Professeur Anne-Geneviève MARCELIN"
           },
           "2": {
             "title": "COVID-19 : réponse immunitaire et vaccination des séropositifs",
@@ -255,7 +265,7 @@
             "experience": {
               "1": {
                 "title": "Expérience de l’Hôpital de la Pitié-Salpêtrière",
-                "name": "Anne-Geneviève MARCELIN"
+                "name": "Professeur Vincent CALVEZ"
               },
               "2": {
                 "title": "Expérience de la Région de Moscou",

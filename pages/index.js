@@ -64,14 +64,37 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
+
+               <link rel="icon" href="/favicon.ico"/>
+
                 <title>MOSCOPAR 2021</title>
                 <meta name="description"
                       content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
-                <link rel="icon" href="/favicon.ico"/>
-                <meta name="twitter:image" content="share-pic.png"/>
-                <meta property="og:image" content="share-pic.png"/>
+
+                <!-- Google / Search Engine Tags -->
+                <meta itemProp="name" content="MOSCOPAR 2021"/>
+                <meta itemProp="description"
+                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                <meta itemProp="image" content="https://moscopar.com/ru/share-pic.png"/>
+
+                <!-- Facebook Meta Tags -->
+                <meta property="og:url" content="https://moscopar.com/ru"/>
+                <meta property="og:type" content="website"/>
                 <meta property="og:title" content="MOSCOPAR 2021"/>
-                <meta property="og:description" content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                <meta property="og:description"
+                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                <meta property="og:image"
+                      content="https://moscopar.com/ru/share-pic.png"/>
+
+                <!-- Twitter Meta Tags -->
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="MOSCOPAR 2021"/>
+                <meta name="twitter:description"
+                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                <meta name="twitter:image"
+                      content="https://moscopar.com/ru/share-pic.png"/>
+
+
                 <link rel="stylesheet" type="text/css" charSet="UTF-8"
                       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
                 <link rel="stylesheet" type="text/css"

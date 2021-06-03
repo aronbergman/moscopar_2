@@ -69,25 +69,25 @@ export default function Home() {
 
                 <title>MOSCOPAR 2021</title>
                 <meta name="description"
-                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                      content="MOSCOPAR – российско-французская научно-практическая конференция. 24–25 июня 2021"/>
 
 
                 <meta itemProp="name" content="MOSCOPAR 2021"/>
                 <meta itemProp="description"
-                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                      content="MOSCOPAR – российско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <meta itemProp="image" content="https://moscopar.com/ru/share-pic.png"/>
 
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="MOSCOPAR 2021"/>
                 <meta name="twitter:description"
-                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                      content="MOSCOPAR – российско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <meta name="twitter:image"
                       content="https://moscopar.com/ru/share-pic.png"/>
                 <meta property="og:url" content="https://moscopar.com/ru"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="MOSCOPAR 2021"/>
                 <meta property="og:description"
-                      content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
+                      content="MOSCOPAR – российско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <meta property="og:image"
                       content="https://moscopar.com/ru/share-pic.png"/>
 

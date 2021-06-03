@@ -68,8 +68,8 @@ export default function Home() {
                 <meta name="description"
                       content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <link rel="icon" href="/favicon.ico"/>
-                <meta name="twitter:image" content="/share-pic.png"/>
-                <meta property="og:image" content="/share-pic.png"/>
+                <meta name="twitter:image" content="share-pic.png"/>
+                <meta property="og:image" content="share-pic.png"/>
                 <meta property="og:title" content="MOSCOPAR 2021"/>
                 <meta property="og:description" content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <link rel="stylesheet" type="text/css" charSet="UTF-8"

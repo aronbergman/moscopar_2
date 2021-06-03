@@ -68,8 +68,10 @@ export default function Home() {
                 <meta name="description"
                       content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <link rel="icon" href="/favicon.ico"/>
-                <meta property="og:image" content="/logo.png"/>
-                <meta name="twitter:image" content="/logo.png"/>
+                <meta name="twitter:image" content="/logo-og.jpg"/>
+                <meta property="og:image" content="/logo-og.jpg"/>
+                <meta property="og:title" content="MOSCOPAR 2021"/>
+                <meta property="og:description" content="MOSCOPAR – русско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <link rel="stylesheet" type="text/css" charSet="UTF-8"
                       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
                 <link rel="stylesheet" type="text/css"

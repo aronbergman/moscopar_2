@@ -79,6 +79,16 @@
       "nameFirst": " Lebedeva ",
       "nameSecond": " Natalia ",
       "description": "docteur en diagnostic clinique et de laboratoire du Centre régional de lutte contre le sida de Moscou"
+    },
+    "calvez": {
+      "nameFirst": " Professeur ",
+      "nameSecond": " Vincent Calvez ",
+      "description": "chef du service de virologie à l'hôpital Pitié Salpêtrièr"
+    },
+    "valantin": {
+      "nameFirst": " Dr Marc-Antoine ",
+      "nameSecond": " Valantin ",
+      "description": "praticien hospitalier en maladies infectieuses, l'hôpital Pitié Salpêtrièr"
     }
   },
   "events": {

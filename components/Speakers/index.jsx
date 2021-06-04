@@ -11,13 +11,15 @@ import pronin from '../../public/pronin.jpg'
 import drobyshevskaya from '../../public/drobyshevskaya.jpg'
 import kaminsky from '../../public/kaminsky.jpg'
 import orlovaMorozova from '../../public/orlovaMorozova.jpg'
+import calvez from '../../public/calvez.jpg'
+import valantin from '../../public/valantin.jpg'
 
 import serkov from '../../public/serkov.jpg'
 import lebedeva from '../../public/lebedeva.jpg'
 import { withTranslation } from "../../i18n";
 
 
-const Speakers = ({t}) => {
+const Speakers = ({ t }) => {
     var settings = {
         dots: true,
         infinite: true,
@@ -92,6 +94,54 @@ const Speakers = ({t}) => {
                 <div className={styles.RadiusAndColorsSecond}>
                     <div className={styles.Squires}>
                         <div className={styles.Mobile}>
+                            <Square photo={calvez} color={'#FF005C'}/>
+                            <Square
+                                nameFirst={t('speakers.calvez.nameFirst')}
+                                nameSecond={t('speakers.calvez.nameSecond')}
+                                description={t('speakers.calvez.description')}
+                                arrow={'right'}
+                                color={'#FF005C'}
+                            />
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square photo={valantin} color={'#002381'}/>
+                            <Square
+                                nameFirst={t('speakers.valantin.nameFirst')}
+                                nameSecond={t('speakers.valantin.nameSecond')}
+                                description={t('speakers.valantin.description')}
+                                arrow={'right'}
+                                color={'#002381'}
+                                textColor={'white'}
+                            />
+                        </div>
+
+                        <div className={styles.Mobile}>
+                            <Square
+                                nameFirst={t('speakers.serkov.nameFirst')}
+                                nameSecond={t('speakers.serkov.nameSecond')}
+                                description={t('speakers.serkov.description')}
+                                arrow={'left'}
+                                color={'#265CDD'}
+                                nameColor={'#00CFFF'}
+                                textColor={'white'}
+                            />
+                            <Square photo={serkov} color={'#00CFFF'}/>
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square
+                                nameFirst={t('speakers.lebedeva.nameFirst')}
+                                nameSecond={t('speakers.lebedeva.nameSecond')}
+                                description={t('speakers.lebedeva.description')}
+                                arrow={'left'}
+                                color={'#00CFFF'}/>
+                            <Square photo={lebedeva} color={'#fff'}/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.RadiusAndColorsSecond}>
+                    <div className={styles.Squires}>
+                        <div className={styles.Mobile}>
                             <Square photo={pronin} color={'#FF005C'}/>
                             <Square
                                 nameFirst={t('speakers.pronin.nameFirst')}
@@ -136,31 +186,6 @@ const Speakers = ({t}) => {
                     </div>
                 </div>
 
-                <div className={styles.RadiusAndColorsSecond}>
-                    <div className={styles.Squires}>
-                        <div className={styles.Mobile}>
-                            <Square photo={serkov} color={'#FF005C'}/>
-                            <Square
-                                nameFirst={t('speakers.serkov.nameFirst')}
-                                nameSecond={t('speakers.serkov.nameSecond')}
-                                description={t('speakers.serkov.description')}
-                                arrow={'right'}
-                                color={'#FF005C'}
-                            />
-                        </div>
-                        <div className={styles.Mobile}>
-                            <Square photo={lebedeva} color={'#002381'}/>
-                            <Square
-                                nameFirst={t('speakers.lebedeva.nameFirst')}
-                                nameSecond={t('speakers.lebedeva.nameSecond')}
-                                description={t('speakers.lebedeva.description')}
-                                arrow={'right'}
-                                color={'#002381'}
-                                textColor={'white'}
-                            />
-                        </div>
-                    </div>
-                </div>
             </Slider>
         </div>
     );

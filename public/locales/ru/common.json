@@ -79,6 +79,16 @@
       "nameFirst": " Лебедева ",
       "nameSecond": " Наталья Николаевна ",
       "description": "врач клинической и лабораторной диагностики  Московского Областного Центра СПИД"
+    },
+    "calvez": {
+      "nameFirst": " Professeur ",
+      "nameSecond": " Vincent Calvez ",
+      "description": "chef du service de virologie à l'hôpital Pitié Salpêtrièr"
+    },
+    "valantin": {
+      "nameFirst": " Dr Marc-Antoine ",
+      "nameSecond": " Valantin ",
+      "description": "praticien hospitalier en maladies infectieuses, l'hôpital Pitié Salpêtrièr"
     }
   },
   "events": {

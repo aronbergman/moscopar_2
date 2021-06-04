@@ -81,14 +81,14 @@
       "description": "врач клинической и лабораторной диагностики  Московского Областного Центра СПИД"
     },
     "calvez": {
-      "nameFirst": " Professeur ",
-      "nameSecond": " Vincent Calvez ",
-      "description": "chef du service de virologie à l'hôpital Pitié Salpêtrièr"
+      "nameFirst": " профессор ",
+      "nameSecond": " Винсент Кальвез ",
+      "description": "заведующий отделением вирусологии больницы Pitié Salpêtrière"
     },
     "valantin": {
-      "nameFirst": " Dr Marc-Antoine ",
-      "nameSecond": " Valantin ",
-      "description": "praticien hospitalier en maladies infectieuses, l'hôpital Pitié Salpêtrièr"
+      "nameFirst": " Доктор Марк-Антуан ",
+      "nameSecond": " Валантин ",
+      "description": "практикующий врач-инфекционист, больница Pitié Salpêtrière"
     }
   },
   "events": {

@@ -117,6 +117,53 @@ const Speakers = ({ t }) => {
 
                         <div className={styles.Mobile}>
                             <Square
+                                nameFirst={t('speakers.pronin.nameFirst')}
+                                nameSecond={t('speakers.pronin.nameSecond')}
+                                description={t('speakers.pronin.description')}
+                                arrow={'left'}
+                                color={'#265CDD'}
+                                nameColor={'#00CFFF'}
+                                textColor={'white'}
+                            />
+                            <Square photo={pronin} color={'#00CFFF'}/>
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square
+                                nameFirst={t('speakers.drobyshevskaya.nameFirst')}
+                                nameSecond={t('speakers.drobyshevskaya.nameSecond')}
+                                description={t('speakers.drobyshevskaya.description')}
+                                arrow={'left'}
+                                color={'#00CFFF'}/>
+                            <Square photo={drobyshevskaya} color={'#fff'}/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.RadiusAndColorsSecond}>
+                    <div className={styles.Squires}>
+                        <div className={styles.Mobile}>
+                            <Square photo={orlovaMorozova} color={'#FF005C'}/>
+                            <Square
+                                nameFirst={t('speakers.orlovaMorozova.nameFirst')}
+                                nameSecond={t('speakers.orlovaMorozova.nameSecond')}
+                                description={t('speakers.orlovaMorozova.description')}
+                                arrow={'right'}
+                                color={'#FF005C'}
+                            />
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square photo={kaminsky} color={'#002381'}/>
+                            <Square
+                                nameFirst={t('speakers.kaminsky.nameFirst')}
+                                nameSecond={t('speakers.kaminsky.nameSecond')}
+                                description={t('speakers.kaminsky.description')}
+                                arrow={'right'}
+                                color={'#002381'}
+                                textColor={'white'}
+                            />
+                        </div>
+                        <div className={styles.Mobile}>
+                            <Square
                                 nameFirst={t('speakers.serkov.nameFirst')}
                                 nameSecond={t('speakers.serkov.nameSecond')}
                                 description={t('speakers.serkov.description')}
@@ -135,53 +182,6 @@ const Speakers = ({ t }) => {
                                 arrow={'left'}
                                 color={'#00CFFF'}/>
                             <Square photo={lebedeva} color={'#fff'}/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={styles.RadiusAndColorsSecond}>
-                    <div className={styles.Squires}>
-                        <div className={styles.Mobile}>
-                            <Square photo={pronin} color={'#FF005C'}/>
-                            <Square
-                                nameFirst={t('speakers.pronin.nameFirst')}
-                                nameSecond={t('speakers.pronin.nameSecond')}
-                                description={t('speakers.pronin.description')}
-                                arrow={'right'}
-                                color={'#FF005C'}
-                            />
-                        </div>
-                        <div className={styles.Mobile}>
-                            <Square photo={drobyshevskaya} color={'#002381'}/>
-                            <Square
-                                nameFirst={t('speakers.drobyshevskaya.nameFirst')}
-                                nameSecond={t('speakers.drobyshevskaya.nameSecond')}
-                                description={t('speakers.drobyshevskaya.description')}
-                                arrow={'right'}
-                                color={'#002381'}
-                                textColor={'white'}
-                            />
-                        </div>
-                        <div className={styles.Mobile}>
-                            <Square
-                                nameFirst={t('speakers.orlovaMorozova.nameFirst')}
-                                nameSecond={t('speakers.orlovaMorozova.nameSecond')}
-                                description={t('speakers.orlovaMorozova.description')}
-                                arrow={'left'}
-                                color={'#265CDD'}
-                                nameColor={'#00CFFF'}
-                                textColor={'white'}
-                            />
-                            <Square photo={orlovaMorozova} color={'#00CFFF'}/>
-                        </div>
-                        <div className={styles.Mobile}>
-                            <Square
-                                nameFirst={t('speakers.kaminsky.nameFirst')}
-                                nameSecond={t('speakers.kaminsky.nameSecond')}
-                                description={t('speakers.kaminsky.description')}
-                                arrow={'left'}
-                                color={'#00CFFF'}/>
-                            <Square photo={kaminsky} color={'#fff'}/>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ const Partners = ({ t }) => {
         { image: image5 },
         { image: image8 },
         { image: image10 },
-        { image: image11 },
+        { image: image11, link: "https://medvestnik.ru/" },
     ]
 
     const settings = {
@@ -46,10 +46,16 @@ const Partners = ({ t }) => {
             <div className={styles.Images}>
                 {
                     partners.map((i, index) => (
-                        <div
-                            key={index}
-                            className={styles.Image}
-                            style={{ backgroundImage: `url(${i.image})` }}/>
+                        i.link ? <a
+                                    href={i.link}
+                                    target="_blank"
+                                    key={index}
+                                    className={styles.Image}
+                                    style={{ backgroundImage: `url(${i.image})` }}/> :
+                                <div
+                                    key={index}
+                                    className={styles.Image}
+                                    style={{ backgroundImage: `url(${i.image})` }}/>
                     ))}
             </div>
 
@@ -58,10 +64,15 @@ const Partners = ({ t }) => {
                     {
                         partners.map((i, index) => (
                             <div>
-                                <div
-                                    key={index}
-                                    className={styles.Image}
-                                    style={{ backgroundImage: `url(${i.image})` }}/>
+                                {i.link ? <a
+                                        href={i.link}
+                                        key={index}
+                                        className={styles.Image}
+                                        style={{ backgroundImage: `url(${i.image})` }}/> :
+                                    <div
+                                        key={index}
+                                        className={styles.Image}
+                                        style={{ backgroundImage: `url(${i.image})` }}/>}
                             </div>
                         ))}
                 </Slider>

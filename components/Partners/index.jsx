@@ -16,16 +16,16 @@ import { withTranslation } from "../../i18n";
 
 const Partners = ({ t }) => {
     const partners = [
-        { image: image3 },
-        { image: image9 },
-        { image: image6 },
-        { image: image1 },
-        { image: image4 },
-        { image: image2 },
-        { image: image7 },
-        { image: image5 },
-        { image: image8 },
-        { image: image10 },
+        { image: image3, link: "https://www.hivmo.ru/" },
+        { image: image9, link: "https://www.aphp.fr/" },
+        { image: image6, link: "https://spid.center/" },
+        { image: image1, link: "" },
+        { image: image4, link: "" },
+        { image: image2, link: "" },
+        { image: image7, link: "" },
+        { image: image5, link: "" },
+        { image: image8, link: "" },
+        { image: image10, link: "" },
         { image: image11, link: "https://medvestnik.ru/" },
     ]
 
@@ -46,7 +46,7 @@ const Partners = ({ t }) => {
             <div className={styles.Images}>
                 {
                     partners.map((i, index) => (
-                        i.link ? <a
+                        i.link.length ? <a
                                     href={i.link}
                                     target="_blank"
                                     key={index}
@@ -64,7 +64,7 @@ const Partners = ({ t }) => {
                     {
                         partners.map((i, index) => (
                             <div>
-                                {i.link ? <a
+                                {i.link.length ? <a
                                         href={i.link}
                                         key={index}
                                         className={styles.Image}

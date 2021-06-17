@@ -16,7 +16,8 @@
     "title3": "конференция"
   },
   "buttons": {
-    "registration": "регистрация"
+    "registration": "регистрация",
+    "events": "скачать программу"
   },
   "about": {
     "title": "о конференции",

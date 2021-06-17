@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Events.module.scss'
 import Event from "./Event";
-import { withTranslation } from "../../i18n";
+import { i18n, withTranslation } from "../../i18n";
+import Button from "../Button/Button";
 
 const Events = ({ t }) => {
 
@@ -221,6 +222,12 @@ const Events = ({ t }) => {
         <div className={styles.Events} id="schedule">
             <h2 className={styles.Title}>{t('events.title')}</h2>
             <Event events={timetable}/>
+            <br/>
+            {i18n.language === 'ru' && <Button
+                label={t('buttons.events')}
+                color="#000"
+                link={'https://moscopar.com/ru/program.pdf'}
+            />}
         </div>
     );
 };

@@ -76,7 +76,7 @@ export default function Home() {
                 <meta itemProp="description"
                       content="MOSCOPAR – российско-французская научно-практическая конференция. 24–25 июня 2021"/>
                 <meta itemProp="image" content="https://moscopar.com/ru/share-pic.png"/>
-
+                <meta name="google-site-verification" content="5xiqMqtZD89sSn3W4OBdFolqHrJntbN76-F_UiXBp8I" />
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="MOSCOPAR 2021"/>
                 <meta name="twitter:description"

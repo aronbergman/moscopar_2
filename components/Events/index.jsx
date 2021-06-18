@@ -226,7 +226,7 @@ const Events = ({ t }) => {
             {i18n.language === 'ru' && <Button
                 label={t('buttons.events')}
                 color="#000"
-                link={'https://moscopar.com/ru/program.pdf'}
+                link={'https://moscopar.com/ru/moscopar_program.pdf'}
             />}
         </div>
     );

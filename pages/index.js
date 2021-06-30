@@ -14,6 +14,7 @@ import Banner from "../components/Banner";
 import Information from "../components/Information";
 import Question from "../components/Question";
 import Footer from "../components/Footer";
+import Video from "../components/Video";
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
 
@@ -108,6 +109,7 @@ export default function Home() {
                 <Header/>
                 <Main/>
                 <About/>
+                <Video/>
                 <Speakers/>
                 <Events/>
                 <Partners/>

@@ -29,6 +29,9 @@
     "hour": "heures",
     "speakers": "intervenants"
   },
+  "video" : {
+    "title": "conférence vidéo"
+  },
   "speakers": {
     "title": "intervenants",
     "katlama": {

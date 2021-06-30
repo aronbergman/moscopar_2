@@ -1,0 +1,65 @@
+@import "./styles/root";
+
+.Speakers {
+  display: flex;
+  flex-direction: column;
+  margin: 0 119px 6em;
+  overflow: hidden;
+
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
+
+  @media #{$mobile} {
+    padding: 0 0 20px;
+    margin: -20px 0 0;
+  }
+
+  .Title {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $base-spacing*3;
+    line-height: 96.11%;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+    color: #000;
+    margin: 0 0 50px;
+
+    @media #{$mobile} {
+      font-size: 24px;
+      margin: 26px 30px;
+    }
+  }
+
+  div > .Speakers {
+    &:nth-child(1) {
+      margin-top: $base-spacing*3;
+
+      @media #{$tabletMax} {
+        margin: 0;
+      }
+    }
+  }
+
+  .Videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media #{$mobile} {
+      flex-direction: column;
+    }
+
+    iframe {
+      width: 43vw;
+      margin: 0;
+
+      @media #{$mobile} {
+        width: auto;
+        height: 300px;
+      margin: 15px 30px;
+      }
+    }
+  }
+}

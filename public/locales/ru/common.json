@@ -29,6 +29,9 @@
     "hour": "часов",
     "speakers": "спикеров"
   },
+  "video" : {
+    "title": "видео конференции"
+  },
   "speakers": {
     "title": "спикеры",
     "katlama": {

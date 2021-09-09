@@ -58,6 +58,13 @@
     @media #{$mobile} {
       height: 80px;
       margin: 5px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: auto 0;
+        width: 100%;
+      }
     }
   }
 }

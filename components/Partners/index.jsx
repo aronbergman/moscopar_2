@@ -30,7 +30,7 @@ const Partners = ({ t }) => {
     ]
 
     const settings = {
-        autoplay: true,
+        // autoplay: true,
         dots: false,
         arrows: true,
         infinite: true,
@@ -47,15 +47,15 @@ const Partners = ({ t }) => {
                 {
                     partners.map((i, index) => (
                         i.link.length ? <a
-                                    href={i.link}
-                                    target="_blank"
-                                    key={index}
-                                    className={styles.Image}
-                                    style={{ backgroundImage: `url(${i.image})` }}/> :
-                                <div
-                                    key={index}
-                                    className={styles.Image}
-                                    style={{ backgroundImage: `url(${i.image})` }}/>
+                                href={i.link}
+                                target="_blank"
+                                key={index}
+                                className={styles.Image}
+                                style={{ backgroundImage: `url(${i.image})` }}/> :
+                            <div
+                                key={index}
+                                className={styles.Image}
+                                style={{ backgroundImage: `url(${i.image})` }}/>
                     ))}
             </div>
 
@@ -63,16 +63,10 @@ const Partners = ({ t }) => {
                 <Slider {...settings}>
                     {
                         partners.map((i, index) => (
-                            <div>
-                                {i.link.length ? <a
-                                        href={i.link}
-                                        key={index}
-                                        className={styles.Image}
-                                        style={{ backgroundImage: `url(${i.image})` }}/> :
-                                    <div
-                                        key={index}
-                                        className={styles.Image}
-                                        style={{ backgroundImage: `url(${i.image})` }}/>}
+                            <div key={index}>
+                                <div className={styles.Image}>
+                                    <img src={i.image}/>
+                                </div>
                             </div>
                         ))}
                 </Slider>

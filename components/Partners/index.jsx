@@ -12,6 +12,7 @@ import image8 from '../../public/partners/8.png'
 import image9 from '../../public/partners/9.png'
 import image10 from '../../public/partners/10.png'
 import image11 from '../../public/partners/11.png'
+import image12 from '../../public/partners/12.jpeg'
 import { withTranslation } from "../../i18n";
 
 const Partners = ({ t }) => {
@@ -27,6 +28,7 @@ const Partners = ({ t }) => {
         { image: image8, link: "" },
         { image: image10, link: "" },
         { image: image11, link: "https://medvestnik.ru/" },
+        { image: image12, link: "" },
     ]
 
     const settings = {
